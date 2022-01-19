@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-from posixpath import split
 import socket
 import argparse
 
