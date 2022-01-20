@@ -1,7 +1,7 @@
 # Python version TCP Port Scanner
 
-![](./poc.png)
+![](img/poc.png)
 
 # Bash version TCP Port Scanner
 
-![](./bash_poc.png)
+![](img/bash_poc.png)
