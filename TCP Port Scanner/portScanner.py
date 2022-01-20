@@ -13,12 +13,11 @@ def sysArgs():
     ap.add_argument("-H", "--host", required=True, help="target Host => ie: 10.10.11.67")
     ap.add_argument("-p", "--port", required=False, default=famous1kPorts, help="target port => ie:22,25 or 22 or 22-30") #default 1000 famous ports
     ap.add_argument("-t", "--timeout", required=False, default=5, help="scanning port timeout => ie: 5") #default timeout 5 seconds
-    ap.add_argument("-T", "--thread", required=False, default=1, help="thread numbers => ie: 3") #default single thread
     ap.add_argument("-fc", "--filterclose", required=False, default=0, help="filter close ports => ie: 0(no filter), 1(filter close ports)")
 
     args = vars(ap.parse_args())
 
-    return args['host'], args["port"], args['timeout'], args["thread"], args["filterclose"]
+    return args['host'], args["port"], args['timeout'], args["filterclose"]
 
 #breaking ports to chunk
 def portNumBreaker(ports):    
@@ -50,7 +49,7 @@ def tcpScanner(host, port, timeout, filterclose):
         s.close()
 
 def main():
-    host, ports, timeout, thread, filterclose = sysArgs() 
+    host, ports, timeout, filterclose = sysArgs() 
 
     splittedPorts = portNumBreaker(ports)
     
