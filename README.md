@@ -1,5 +1,5 @@
 # Red-Team-Advent-of-Code
- My Collection of Red Team Advert of Codes Tools Building
+ My Collection of Building Red Team Advert of Codes Tools 
 
 ### Building my Red Team Tools Collection from this Git repo challenge
 https://github.com/fumamatar/Red-Team-Advent-of-Code
